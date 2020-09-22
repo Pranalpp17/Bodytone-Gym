@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodytone</title>
+</head>
+
+<style>
+    body {
+        height: 1100px;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        background: url('gym\ 1.jpeg')
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        /* border: red 2px solid; */
+    }
+
+    .left img {
+        width: 75px;
+        height: 75px;
+        padding: 0px 25px;
+    }
+
+    .logo {
+        font-family: fantasy;
+        font-size: 20px;
+        position: absolute;
+        left: 25px;
+        top: 75px;
+    }
+
+    .mid {
+        display: block;
+        width: 800px;
+        margin: 50px auto;
+        /* border: yellow 2px solid;  */
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        /* margin: 125px auto;   */
+        padding: 25px 25px;
+    }
+
+    .active:hover {
+        text-decoration: underline;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        /* border: green 2px solid; */
+
+    }
+
+    .btn {
+        font-size: 17px;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0px 5px;
+        border: 1px solid gray;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .form {
+        display: block;
+        width: 500px;
+        height: 700px;
+        margin: 200px 900px;
+        /* border: 2px solid yellow; */
+        /* padding: 25px 25px; */
+    }
+
+    .form h1 {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .formgroup input {
+
+        display: block;
+        text-align: center;
+        width: 375px;
+        padding: 10px;
+        margin: 35px auto;
+
+    }
+
+    .form .btn {
+        display: block;
+        width: 150px;
+        margin: auto;
+    }
+
+    .form .btn:hover {
+        background-color: gold;
+    }
+</style>
+
+<body>
+    <!-- This is all For Header - Header Code Start -->
+    <header class="header">
+        <div class="left">
+            <img src="images 1.jpg" alt="">
+            <div class="logo">BodyTone</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://www.fitnessfirst.net.in/train-with-us" target="_blank" class="active">About Us</a>
+                </li>
+                <li><a href="https://www.calculator.net/fitness-and-health-calculator.html" target="_blank"
+                        class="active">Fitness Calculator</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <!-- Header Code End -->
+    <!-- This is all for Form - Form Code Start -->
+    <div class="form">
+
+        <H1>Please Fill this form</H1>
+
+        <form action="noaction.php">
+
+            <div class="formgroup">
+                <input type="text" name="Name" placeholder="Enter your name">
+            </div>
+
+            <div class="formgroup">
+                <input type="number" name="Age" placeholder="Enter your age">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="Address" placeholder="Enter your address">
+            </div>
+
+            <div class="formgroup">
+                <input type="emailt" name="Email" placeholder="Enter your email">
+            </div>
+
+            <div class="formgroup">
+                <input type="number" name="Phone Number" placeholder="Enter your phone number">
+            </div>
+
+            <button class="btn">Submit Form</button>
+
+        </form>
+    </div>
+    <!-- Form Code End -->
+</body>
+
+</html>
